@@ -1,0 +1,10 @@
+javascript---------> para la parte de servidor
+html5 --------> para los templates
+
+botones de candidato cambiar el target a "_blank"
+
+lista despegable de servicios de correo electronico, en la seccion de empresas 
+y postulantes para evitar que el usuario escriba y se equivoque 
+
+pop-up en la seccion de empresas y postulantes para el ingreso de datos y luego de rellenar los datos 
+que salga la confirmacion.

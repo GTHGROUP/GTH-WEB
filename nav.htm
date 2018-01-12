@@ -1,0 +1,125 @@
+<nav class="navbar-fixed-top navbar-inverse" id="navigation">
+        <!-- El logotipo y el icono que despliega el menú se agrupan
+               para mostrarlos mejor en los dispositivos móviles -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.htm">
+                <img id="logo" src="images/666.png" width="95px" height="85px">
+                <p>GTH <br>Group</p>
+            </a>
+        </div>
+
+        <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+           otro elemento que se pueda ocultar al minimizar la barra -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="links-box">
+                <ul class="nav navbar-nav navbar-right nav-ul">
+                  <li><a href="#init">Inicio</a></li>
+                  <li><a href="#us">Nosotros</a></li>
+                  <li><a href="#service">Servicios</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="nav navbar-nav navbar-right nav-ul">
+                    <li><a class="social-media" href="#"><img alt="Linkedin" src="images/li-1.png"></a></li>
+                    <li><a class="social-media" href="#"><img alt="Facebook" src="images/f-1.png"></a></li>
+                    <li><a class="social-media" href="#"><img alt="Twitter" src="images/t-1.png"></a></li>
+                    <li><a class="social-media" href="#"><img alt="Instragram" src="images/i-1.png"></a></li>
+                </ul>   
+            </div>
+        </div>
+    </nav>
+
+
+
+<style>
+    #navigation{
+    height: 95px;
+    background-color: #000000b8;
+    /*background: linear-gradient(to bottom right, #312020, #6b6664);*/
+    /*background: #222;*/
+    /*background: linear-gradient(-45deg, #ff4606 50%, #ff4606 5%, white 45%);*/
+}
+
+#navigation .collapse div .nav-ul img{
+    margin-top: -10px;
+    height: 45px;
+}
+
+#navigation .collapse div .nav-ul .social-media{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.navbar-header .navbar-brand , .navbar-brand img{
+    padding: 0px;
+    display: inline;
+}
+
+.navbar-brand p{
+    float: right;
+    margin-top: 3px;
+    font-size: 100%;
+    font-weight: 600;
+    color: white;
+}
+
+
+.nav-ul{
+    padding-right: 20px;
+    margin-top: 35px;
+    float: left !important;
+}
+
+.nav-ul li{
+    padding-right: 5px;
+    font-size: 170%;
+    font-weight: bold;
+}
+
+.navbar-header a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.navbar-inverse .navbar-nav li a{
+    color: white;
+    padding: 0px;
+    font-weight: 550;
+}
+
+.navbar-inverse .links-box .nav-ul li a:hover{
+    color: #ff4606;
+    border-bottom: 3px solid #ff4606;
+    padding-bottom: 10px;
+    font-weight: 550;
+    transition: 0.4s;
+}
+
+.links-box li{
+    margin-right: 25px;
+}
+
+.carousel-control{
+    z-index: 100;
+}
+
+.collapse{
+    float: right;
+    width: 670px;
+}
+
+.social-media img{
+    height: 30px;
+    width: 30px;
+}
+
+.navtop{
+    background-color: #ff4606;
+}
+
+.navbottom{
+    background-color: black;
+}
+
+</style>

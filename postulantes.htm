@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GTH Group</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/logo-oficial.png" type="image/png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!-- Minified JS library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+    <!-- para usar iconos, visitar la pagina fontawesome.com -->
+    <script src="https://use.fontawesome.com/ff6d3cf401.js"></script>
+
+    <!--scripts del efecto particula-->
+    <!--<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+    <script src='https://threejs.org/examples/js/libs/stats.min.js'></script>-->
+    <!--<script  src="js/particles.app.js"></script>-->
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <ul id="list-social-item-links" class="nav navbar-nav navbar-right">
+            <li class="facebook">
+                <div class="bg-links fb"></div>
+                <a class="social-item-link text-center" href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="linkedin">
+                <div class="bg-links in">
+                </div>
+                <a class="social-item-link text-center" href="#">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="twitter">
+                <div class="bg-links tw"></div>
+                <a class="social-item-link text-center" href="#">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="instagram">
+                <div class="bg-links ins"></div>
+                <a class="social-item-link text-center" href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="box-list-item-page">
+                <ul class="nav navbar-nav list-item-page">
+                    <li><a id="welcome" class="bold" href="#">Inicio</a></li>
+                    <li><a class="move bold" href="#us">Nosotros</a></li>
+                    <li><a class="move bold" href="#service">Sevicios</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Desplegar navegación</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.htm">
+                <img id="logo" src="images/logo-oficial.png" width="65px" height="70px">
+                <div class="center-block"><p>GTH <br>Group</p></div>
+            </a>
+
+            <!--contenedor del efecto de particulas--> 
+            <!--<div id="particles-js"></div>-->
+        </div>    
+    </nav>
+</header>
+<div id="enterprise-body" class="container-fluid">
+	<section id="send" class="col-sm-12">
+        <!-- espacio para poder centrar el mensaje y el formulario-->
+		<div class="col-sm-3"></div>
+        <div class="col-sm-6">
+    		<div class="message-contact">
+    			<p class="text-center"><strong class="tittle text-center">BIENVENIDO</strong></p>
+    			<p class="text-center">&Uacute;nete a la familia de GTH Group.</p>
+    			<p class="text-message-contact">Ingresa tu CV y forma parte de nosotoros, aquí encontrar&aacute;s
+    			 multiples oportunidades para tu crecimiento profesional y un grato ambiente laboral.</p>
+    		</div>
+			<div>
+				<form>
+				  	<div class="form-group">
+				    	<label for="ejemplo_email_1">Nombre:</label>
+				    	<input type="text" class="form-control input-send" autofocus="true" id="ejemplo_email_1"
+				           placeholder="Introduce tu nombre">
+				  	</div>
+				  	<div class="form-group">
+				    	<label for="ejemplo_email_1">Email:</label>
+				    	<input type="email"	 class="form-control input-send" id="ejemplo_email_1"
+				           placeholder="Introduce tu email">
+				  	</div>
+				  	<div class="form-group">
+		    			<input type="file" name="file" id="file" class="inputfile"/>
+		    			<label for="file">Sube tu CV</label>
+		  		  	</div>
+				  	<button type="submit" class=" btn-send btn btn-default">Enviar</button>
+				</form>
+			</div>	
+        </div>    
+        <div class="col-sm-3"></div>
+	</section>
+</div>	
+</body>
+</html>
