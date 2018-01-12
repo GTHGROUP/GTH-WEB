@@ -42,28 +42,28 @@
 }
 .ei-text{
 	position: absolute;
-	right: 60%;
-	margin-right: 6%;
-	top: 80%;
-	font-size: 20px;
+    right: 79%;
+    margin-right: 32px;
+    top: 64%;
+    /* font-size: 1px; */
+    width: 250px;
 }
+
+.ei-text h3{
+	font-size: 19px;
+}
+
 .ei-title h2, .ei-title h3{
 	text-align: right;
 }
 .ei-title h2{
-	font-size: 40px;
+	font-size: 30px;
 	line-height: 50px;
 	font-family: 'Playfair Display', serif;
 	font-style: italic;
 	color: #b5b5b5;
 }
-.ei-title h3{
-	font-size: 70px;
-	line-height: 70px;
-	font-family: 'Open Sans Condensed', sans-serif;
-	text-transform: uppercase;
-	color: #000;
-}
+
 .ei-slider-thumbs{
 	height: 13px;
 	margin: 0 auto;

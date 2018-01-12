@@ -1,6 +1,7 @@
 body{
 	margin: 0 auto;
 	/*margin-top: 50px;*/
+	overflow-x: hidden;
 }
 
 a:link{
@@ -481,6 +482,64 @@ header{
   border-radius: 3px 3px 0 0;
   overflow: hidden;
 }*/
+
+
+#talento-humano .img-talento{
+	margin-left: -275px;
+	margin-top: -190px;
+}
+
+#talento-humano .img-talento img{
+	width: 850px;
+}
+
+#talento-humano ul{
+	padding: 0px;
+	list-style: none;
+}
+
+#talento-humano ul li{
+	float: left;
+}
+
+#talento-humano .container-btn-p{
+	float: left !important;
+	margin-right: 50px;
+}
+
+#talento-humano .icono-talento{
+	width: 200px;
+	float: left;
+}
+
+#talento-humano .button-section{
+	font-size: 18px;
+	width: 270px;
+	background-color: #ff4606;
+	color: white;
+}
+
+#talento-humano .angel:before{
+	background-color: #ff4606;
+}
+
+#talento-humano .angel:after{
+	background-color: #ff4606;
+}
+
+#talento-humano .container-btn-p p{
+	font-size: 19px;
+	text-align: center;
+}
+
+#talento-humano .icono-talento {
+    font-size: 45px;
+}
+
+.mgt-20{
+	margin-top: 20px;
+}
+
 
 
 .slidein {
