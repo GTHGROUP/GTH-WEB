@@ -2,7 +2,7 @@
 .container-packs{
 	width: 750px;
 	height: 440px;
-	margin: 30px auto;
+	margin: 90px auto;
 }
 
 .pack{
@@ -83,11 +83,20 @@
 }
 
 .pack-benefit{
-	display: none;
-	height: 0;
+	padding: 2px 10px;
 }
 
-.btn:active .pack-benefit{
+.pack-benefit ul{
+	padding-left: 14px;
+	list-style: disc;
+}
+
+/*.pack-benefit{
+	display: none;
+	height: 0;
+}*/
+
+/*.btn:active .pack-benefit{
 	display: block;
 	height: 100%
-}
+}*/

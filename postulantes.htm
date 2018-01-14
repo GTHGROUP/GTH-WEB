@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>GTH Group</title>
-	<meta charset="utf-8">
+    <title>GTH Group</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/logo-oficial.png" type="image/png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
@@ -15,12 +15,32 @@
     <!-- para usar iconos, visitar la pagina fontawesome.com -->
     <script src="https://use.fontawesome.com/ff6d3cf401.js"></script>
 
-    <!--scripts del efecto particula-->
-    <!--<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
-    <script src='https://threejs.org/examples/js/libs/stats.min.js'></script>-->
-    <!--<script  src="js/particles.app.js"></script>-->
+    <script type="text/javascript">
+    function mostrarVentana()
+    {
+        var ventana = document.getElementById('miVentana'); // Accedemos al contenedor
+        ventana.style.marginTop = "50px"; // Definimos su posición vertical. La ponemos fija para simplificar el código
+        ventana.style.marginLeft = ((document.body.clientWidth-200)/8) +  "px"; // Definimos su posición horizontal
+        ventana.style.display = 'block'; // Y lo hacemos visible
+
+        var box = document.getElementById('box-modal');
+
+        box.style.backgroundColor = "rgba(12, 12, 12, 0.62)";
+
+    }
+
+    function ocultarVentana()
+    {
+        var ventana = document.getElementById('miVentana'); // Accedemos al contenedor
+        var box = document.getElementById('box-modal');
+
+        ventana.style.display = 'none'; // Y lo hacemos invisible
+
+        box.style.backgroundColor = "rgba(12, 12, 12, 0)";
+    }
+</script>
 </head>
-<body>
+<body class="enterprise-modal"> 
 <header>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <ul id="list-social-item-links" class="nav navbar-nav navbar-right">
@@ -68,48 +88,105 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.htm">
-                <img id="logo" src="images/logo-oficial.png" width="65px" height="70px">
+                <!--<img id="logo" src="images/logo-oficial.png" width="65px" height="70px">-->
+                <div class="box-logo">
+                    <div class="logo">
+                    </div>
+                    <span>G</span>
+                </div>
                 <div class="center-block"><p>GTH <br>Group</p></div>
             </a>
-
-            <!--contenedor del efecto de particulas--> 
-            <!--<div id="particles-js"></div>-->
         </div>    
     </nav>
 </header>
 <div id="enterprise-body" class="container-fluid">
+<div id="box-modal" class="container-fluid">    
 	<section id="send" class="col-sm-12">
         <!-- espacio para poder centrar el mensaje y el formulario-->
 		<div class="col-sm-3"></div>
         <div class="col-sm-6">
     		<div class="message-contact">
     			<p class="text-center"><strong class="tittle text-center">BIENVENIDO</strong></p>
-    			<p class="text-center">&Uacute;nete a la familia de GTH Group.</p>
-    			<p class="text-message-contact">Ingresa tu CV y forma parte de nosotoros, aquí encontrar&aacute;s
+    			<p class="text-center"><h3>&Uacute;nete a la familia de GTH Group.</h3></p>
+    			<p class="text-message-contact">Envia tu CV y forma parte de nosotoros, aquí encontrar&aacute;s
     			 multiples oportunidades para tu crecimiento profesional y un grato ambiente laboral.</p>
     		</div>
-			<div>
-				<form>
-				  	<div class="form-group">
-				    	<label for="ejemplo_email_1">Nombre:</label>
-				    	<input type="text" class="form-control input-send" autofocus="true" id="ejemplo_email_1"
-				           placeholder="Introduce tu nombre">
-				  	</div>
-				  	<div class="form-group">
-				    	<label for="ejemplo_email_1">Email:</label>
-				    	<input type="email"	 class="form-control input-send" id="ejemplo_email_1"
-				           placeholder="Introduce tu email">
-				  	</div>
-				  	<div class="form-group">
-		    			<input type="file" name="file" id="file" class="inputfile"/>
-		    			<label for="file">Sube tu CV</label>
-		  		  	</div>
-				  	<button type="submit" class=" btn-send btn btn-default">Enviar</button>
-				</form>
-			</div>	
-        </div>    
+                <!--<a href="javascript:mostrarVentana();"><button class="btn btn-primary btn-postulantes"> Postula aqui </button></a>-->
+                <h3 class="postular">Postula aqui: </h3><h2 class="postular">convocatoria@gthgroup.com.pe</h2>
+                <div id="miVentana" class="container-fluid">
+                 <div class="tittle-modal">Por favor dejanos tus datos, tenemos una oportunida para ti</div>
+                 <form action="send-mail.php" method="post">
+                    <div class="form-group">
+                        <label for="ejemplo_email_1">Nombre:</label>
+                        <input type="text" class="form-control input-send" autofocus="true" name="name" 
+                           placeholder="Introduce tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="ejemplo_email_1">Email:</label>
+                        <input type="email"  class="form-control input-send" name="email" 
+                           placeholder="Introduce tu email">
+                    </div>
+                    <div class="form-group">
+                        <input type="file" name="file" id="file" class="inputfile"/>
+                        <label for="file">Sube tu CV</label>
+                    </div>
+                    <button type="submit" class=" btn-send btn btn-default" id="btnAceptar" onclick="ocultarVentana();">Enviar</button>
+                </form>
+                </div>  
+			</div>	  
         <div class="col-sm-3"></div>
 	</section>
+</div> 
 </div>	
 </body>
+<style type="text/css">
+
+.btn-postulantes{
+    font-size: 24px;
+    background-color: #ff460600;
+    border: 1px solid #0b2533;
+    padding: 6px 28px;
+    color: #0b2533;
+}
+
+.btn-postulantes:hover{
+    color: white;
+    background-color: #0b2533;
+}
+
+.tittle-modal{
+    padding: 5px 18px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+#box-modal{
+    height: 650px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#miVentana{
+    position: absolute; 
+    width: 350px;
+    top: 0; 
+    left: 0; 
+    font-family:Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 12px; 
+    font-weight: normal; 
+    border: #333333 3px solid; 
+    background-color: #FAFAFA; 
+    color: #000000; 
+    display:none;
+}
+
+#btnAceptar{
+    text-align: center; 
+    margin-top: 44px; 
+    margin-bottom: 15px;
+}
+
+</style>
 </html>

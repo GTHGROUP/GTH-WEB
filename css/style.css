@@ -39,7 +39,16 @@
 	right: 61%;
 	margin-right: 17%;
 	top: 3%;
+	color: white;
 }
+
+.ei-text a{
+	text-decoration: none;
+	color: white;
+	font-size: 27px;
+	border: 1px solid white;
+}
+
 .ei-text{
 	position: absolute;
     right: 79%;
@@ -47,6 +56,7 @@
     top: 64%;
     /* font-size: 1px; */
     width: 250px;
+    color: white;
 }
 
 .ei-text h3{
@@ -59,9 +69,6 @@
 .ei-title h2{
 	font-size: 30px;
 	line-height: 50px;
-	font-family: 'Playfair Display', serif;
-	font-style: italic;
-	color: #b5b5b5;
 }
 
 .ei-slider-thumbs{

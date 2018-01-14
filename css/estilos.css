@@ -18,6 +18,34 @@ header{
 	width: 100%;
 }
 
+.navbar-brand{
+	margin-left: 10px;
+}
+
+.box-logo span{
+	color: #FF4606;
+	position: absolute;
+    z-index: 100000;
+    top: 28px;
+    font-size: 69px;
+    right: 85px;
+    font-weight: 700;
+}
+
+.logo{
+	background-color: white;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border-radius: 6px;
+	height: 50px;
+	width: 50px;
+	margin-right: 20px;
+	margin-top: 8px;
+}
+
 .navbar-inverse{
 	border-radius: 0px;
 	border: 0px;
@@ -134,7 +162,7 @@ header{
 
 /**************************estilos del carrusell**********************/
 .img-c{
-	height: 390px !important;
+	height: 460px !important;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -296,6 +324,7 @@ header{
 
 .text-cubas{
 	font-size: 36px;
+	color: white;
     font-weight: 600;
 }
 /***********************seccion nosotros*************************/
@@ -370,10 +399,14 @@ header{
 /*ESTILOS DE POSTULANTES*/
 
 #enterprise-body{
+	height: 550px;
 	color: black;
 	background-image: url('../images/9-min.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding-top: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 #date-contact .list-contact{
@@ -382,6 +415,11 @@ header{
 
 .text-message-contact{
 	font-size: 20px;
+}
+
+.message-contact, .postular, .message-contact h3{
+	font-weight: 800;
+	color: white;
 }
 
 .btn-send{
@@ -482,55 +520,6 @@ header{
   overflow: hidden;
 }*/
 
-
-.slidein {
-	margin-left: -150px;
-  -moz-animation-duration: 3s;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -moz-animation-name: slidein;
-  -webkit-animation-name: slidein;
-  animation-name: slidein;
-  -moz-animation-iteration-count: 3;
-  -webkit-animation-iteration-count: 3;
-  animation-iteration-count: 1;
-  -moz-animation-direction: alternate;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-}
-    
-@-moz-keyframes slidein {
-  from {
-    margin-left:100%;
-    width:300%
-  }
-      
-  to {
-    margin-left:0%;
-    width:100%;
-  }
-}
-
-@-webkit-keyframes slidein {
-  from {
-    margin-left:100%;
-    width:300%
-  }
-  
-  to {
-   margin-left: 10%;
-   width:100%;
- }
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 0px;
-    width: 0%;
-  }
-
-  to {
-    margin-left: 500px;
-    width: 100%;
-  }
+#about-container{
+	margin-top: 150px;
 }

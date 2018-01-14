@@ -19,6 +19,34 @@ header{
 	width: 100%;
 }
 
+.navbar-brand{
+	margin-left: 10px;
+}
+
+.box-logo span{
+	color: #FF4606;
+	position: absolute;
+    z-index: 100000;
+    top: 28px;
+    font-size: 69px;
+    right: 85px;
+    font-weight: 700;
+}
+
+.logo{
+	background-color: white;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border-radius: 6px;
+	height: 50px;
+	width: 50px;
+	margin-right: 20px;
+	margin-top: 8px;
+}
+
 .navbar-inverse{
 	border-radius: 0px;
 	border: 0px;
